@@ -1,0 +1,79 @@
+*
+{
+    background-color: black;
+    font-family: 'Fraunces', serif;
+    color: white;
+    font-size: 100px;
+   
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+ 
+  transform: translate(-50%, -50%);
+}
+
+#hours
+{
+    order: 1;
+    
+}
+#minutes
+{
+    order: 2;
+}
+#seconds
+{
+    order: 3;
+}
+#mili
+{
+    order: 4;
+    
+}
+
+.container div
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+@media only screen and (max-width: 600px)
+{
+    *
+    {
+        background-color: black;
+        font-family: 'Fraunces', serif;
+        color: white;
+        font-size: 200px;
+        
+
+    
+    }
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    
+    transform: translate(-50%, -50%);
+    }
+
+    .container div
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        transform: rotate(90deg);
+    }
+    
+    
+}
