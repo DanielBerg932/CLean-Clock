@@ -23,13 +23,18 @@ setInterval(function()
         {
             seconds='0'+today.getSeconds();
         }  
-        if (mili<10)
+        if (mili<100)
         {
             mili='0'+today.getSeconds();
-        } 
+        }
+		if (mili<10)
+		{
+            mili='00'+today.getSeconds();
+        }
+			
     hoursid.textContent=hours;
     minutesid.textContent=minutes
     secondsid.textContent=seconds;
-   // miliid.textContent=mili;remove for miliseconds
+    miliid.textContent=mili;
 
-},1000);
+},1);
